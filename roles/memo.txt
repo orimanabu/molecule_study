@@ -1,0 +1,1 @@
+molecule init role -r work --verifier-name ansible
