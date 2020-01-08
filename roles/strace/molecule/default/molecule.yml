@@ -1,0 +1,28 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: instance
+    image: centos:7
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+    options:
+      x:
+        - ANSIBLE0010
+        - ANSIBLE0012
+        - ANSIBLE0013
+verifier:
+  name: ansible
+  lint:
+    name: ansible-lint
+    options:
+      x:
+        - ANSIBLE0010
+        - ANSIBLE0012
+        - ANSIBLE0013

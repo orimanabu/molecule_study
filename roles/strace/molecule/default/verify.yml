@@ -1,0 +1,9 @@
+---
+- name: verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: check path
+      shell:
+        cmd: ls -l /usr/bin/strace
+      changed_when: false

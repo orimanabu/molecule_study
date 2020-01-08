@@ -1,0 +1,5 @@
+---
+- name: install strace
+  yum:
+    name: strace
+    state: latest
