@@ -1,1 +1,2 @@
-molecule init role -r work --verifier-name ansible
+molecule init role -r _reference_ --verifier-name ansible
+molecule init template --url "/home/ori/molecule_study_cookiecutter/custom" --role-name work --no-input
